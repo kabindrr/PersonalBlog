@@ -29,18 +29,29 @@ body {
 
 .container {
   width: auto;
+  padding: 0 50px;
   /* margin: 5px; */
 }
 .icons {
   display: flex;
   width: auto;
+
   justify-content: space-between;
   background-color: rgba(0, 255, 255, 0.397);
   padding: 5px;
   margin: 0;
 }
+.icons h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
 .font-icons ul {
   font-size: 25px;
+}
+.font-icons i {
+  padding: 10px;
 }
 .navBar {
   color: wheat;
@@ -77,6 +88,7 @@ body {
 
 .hero {
   background: url(./assets/bg3.jpg) no-repeat center;
+  background-attachment: fixed;
   height: 60vh;
   width: auto;
   background-size: cover;
@@ -95,6 +107,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  backdrop-filter: blur(10px);
 }
 
 .hero-content hr {
@@ -262,7 +275,7 @@ article .btn {
     padding: 10px;
   }
   .hero-content {
-    width: 60%;
+    width: 70%;
   }
   .latest {
     font-size: medium;
