@@ -28,12 +28,12 @@ body {
 }
 
 .container {
-  width: 98%;
+  width: auto;
   /* margin: 5px; */
 }
 .icons {
   display: flex;
-  width: 100%;
+  width: auto;
   justify-content: space-between;
   background-color: rgba(0, 255, 255, 0.397);
   padding: 5px;
@@ -49,7 +49,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  width: 100%;
+  width: auto;
   background: var(--secondary-color);
   padding: 5px;
   margin-bottom: 5px;
@@ -78,7 +78,7 @@ body {
 .hero {
   background: url(./assets/bg3.jpg) no-repeat center;
   height: 60vh;
-  width: 100%;
+  width: auto;
   background-size: cover;
   padding: 5px;
 
@@ -102,7 +102,7 @@ body {
 }
 
 .latest {
-  width: 98%;
+  width: auto;
   background: var(--primary-color);
   background: url(./assets/heroBackground.jpg) no-repeat center;
   background-size: cover;
@@ -110,7 +110,7 @@ body {
   color: black;
   font-size: larger;
   padding: 5px;
-  margin: 10px;
+  margin: 5px;
 }
 
 .container h2 {
@@ -163,7 +163,7 @@ article .btn {
 
 .footer {
   height: 200px;
-  width: 100%;
+  width: auto;
   background-color: var(--secondary-color);
 
   margin: 5px;
@@ -240,6 +240,64 @@ article .btn {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (width>600px) and (width < 992px) {
+  .navBar {
+    width: auto;
+  }
+  .navbarItems {
+    font-size: small;
+  }
+  .logo img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  .navbarItems div:hover {
+    transform: scale(1.5);
+    color: red;
+  }
+  .hero {
+    height: 50vh;
+    padding: 10px;
+  }
+  .hero-content {
+    width: 60%;
+  }
+  .latest {
+    font-size: medium;
+  }
+  .container h2 {
+    font-size: 1.5rem;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .articles {
+    width: 100%;
+  }
+  .sidelinks {
+    width: 100%;
+  }
+  .card-list {
+    flex-direction: column;
+  }
+  .card {
+    width: 95%;
+  }
+
+  .container input {
+    width: 95%;
+    margin: 10px;
+  }
+  .container button {
+    width: 95%;
+    margin: 10px;
+  }
+  .footer {
+    height: auto;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 600px) {
